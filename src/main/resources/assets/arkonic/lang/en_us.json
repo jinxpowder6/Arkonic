@@ -7,5 +7,7 @@
   "block.arkonic.citrine_ore": "Citrine Ore",
   "block.arkonic.deepslate_citrine_ore": "Deepslate Citrine Ore",
   "block.arkonic.endstone_citrine_ore": "Endstone Citrine Ore",
-  "block.arkonic.netherrack_citrine_ore": "Netherrack Citrine Ore"
+  "block.arkonic.netherrack_citrine_ore": "Netherrack Citrine Ore",
+
+  "itemGroup.arkonictab": "Arkonic"
 }
