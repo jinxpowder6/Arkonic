@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "arkonic:citrine_ore",
+    "arkonic:citrine_block",
+    "arkonic:raw_citrine_block",
+    "arkonic:deepslate_citrine_ore",
+    "arkonic:netherrack_citrine_ore",
+    "arkonic:endstone_citrine_ore"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "arkonic:citrine_ore"
+  },
+  "result": "arkonic:citrine",
+  "experience": 0.9,
+  "cookingtime": 400
+}
