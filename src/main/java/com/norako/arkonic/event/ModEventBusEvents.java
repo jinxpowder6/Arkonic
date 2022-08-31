@@ -2,6 +2,7 @@ package com.norako.arkonic.event;
 
 import com.norako.arkonic.Arkonic;
 import com.norako.arkonic.entity.ModEntityTypes;
+import com.norako.arkonic.entity.custom.MountaineerEntity;
 import com.norako.arkonic.entity.custom.RaccoonEntity;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -14,5 +15,6 @@ public class ModEventBusEvents
     public static void entityAttributeEvent(EntityAttributeCreationEvent event)
     {
         event.put(ModEntityTypes.RACCOON.get(), RaccoonEntity.setAttributes());
+        event.put(ModEntityTypes.MOUNTAINEER.get(), MountaineerEntity.setAttributes());
     }
 }

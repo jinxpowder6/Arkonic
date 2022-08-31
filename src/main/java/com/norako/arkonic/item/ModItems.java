@@ -23,7 +23,7 @@ public class ModItems
     public static final RegistryObject<Item> SALAD = ITEMS.register("salad",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ARKONIC_TAB).food(ModFoods.SALAD)));
 
-    public static final RegistryObject<Item> RACCOON_SPAWN_EGG = ITEMS.register("raccoon_sspawn_egg",
+    public static final RegistryObject<Item> RACCOON_SPAWN_EGG = ITEMS.register("raccoon_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntityTypes.RACCOON, 0x948e8d, 0x3b3635,
                     new Item.Properties().tab(ModCreativeModeTab.ARKONIC_TAB)));
 

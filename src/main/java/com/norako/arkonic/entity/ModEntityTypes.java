@@ -1,6 +1,7 @@
 package com.norako.arkonic.entity;
 
 import com.norako.arkonic.Arkonic;
+import com.norako.arkonic.entity.custom.MountaineerEntity;
 import com.norako.arkonic.entity.custom.RaccoonEntity;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
@@ -19,6 +20,14 @@ public class ModEntityTypes
             () -> EntityType.Builder.of(RaccoonEntity::new, MobCategory.CREATURE)
                     .sized(0.8f, 0.6f)
                     .build(new ResourceLocation(Arkonic.MOD_ID, "raccoon").toString()));
+
+    public static final RegistryObject<EntityType<MountaineerEntity>> MOUNTAINEER =
+            ENTITY_TYPES.register("mountaineer",
+                    () -> EntityType.Builder.<MountaineerEntity>of(MountaineerEntity::new, MobCategory.MONSTER)
+                            .sized(0.6F * 1.1F, 1.95F * 1.1F)
+                            .clientTrackingRange(8)
+                            .setCustomClientFactory((spawnEntity, level) -> new MountaineerEntity(level))
+                            .build(new ResourceLocation(Arkonic.MOD_ID, "mountaineer").toString()));
 
     public static void register(IEventBus eventBus)
     {

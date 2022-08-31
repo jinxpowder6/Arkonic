@@ -2,6 +2,7 @@ package com.norako.arkonic;
 
 import com.norako.arkonic.block.ModBlocks;
 import com.norako.arkonic.entity.ModEntityTypes;
+import com.norako.arkonic.entity.client.MountaineerRenderer;
 import com.norako.arkonic.entity.client.RaccoonRenderer;
 import com.norako.arkonic.item.ModItems;
 import net.minecraft.client.renderer.entity.EntityRenderers;
@@ -56,6 +57,7 @@ public class Arkonic
     private void clientSetup(final FMLClientSetupEvent event)
     {
         EntityRenderers.register(ModEntityTypes.RACCOON.get(), RaccoonRenderer::new);
+        EntityRenderers.register(ModEntityTypes.MOUNTAINEER.get(), MountaineerRenderer::new);
     }
 
     private void setup(final FMLCommonSetupEvent event)
